@@ -26,14 +26,14 @@ def print_student_names_and_ages():
         print(f"{student.name} - {student.age}")
 
 
-def sort_students_by_name():
-    return sorted(students, key=lambda student: student.name.lower())
+def sort_students_by_age():
+    return sorted(students, key=lambda student: student.age)
 
 
 def print_sorted_students():
-    sorted_students = sort_students_by_name()
+    sorted_students = sort_students_by_age()
 
-    print("\nStudents sorted by name:")
+    print("\nStudents sorted by age:")
     for student in sorted_students:
         print(f"{student.name} - {student.age}")
 
