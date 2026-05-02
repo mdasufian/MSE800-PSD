@@ -1,0 +1,129 @@
+<mxfile host="app.diagrams.net" agent="Cursor" pages="2">
+  <diagram id="UC_CustomerPortal" name="UC1 - Customer FX Services">
+    <mxGraphModel dx="1285" dy="714" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="980" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=15;fontStyle=1;whiteSpace=wrap;" value="Use Case Diagram 1 — Customer FX Services&amp;nbsp;(aligned with ACCOUNT, FX_TRANSACTION)" vertex="1">
+          <mxGeometry height="32" width="720" x="280" y="12" as="geometry" />
+        </mxCell>
+        <mxCell id="actor_customer" parent="1" style="shape=umlActor;html=1;outlineConnect=0;fillColor=#000000;fontColor=#000000;strokeColor=#000000;fontSize=12;verticalLabelPosition=bottom;verticalAlign=top;spacingBottom=-4;" value="Customer" vertex="1">
+          <mxGeometry height="70" width="36" x="90" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="actor_compliance" parent="1" style="shape=umlActor;html=1;outlineConnect=0;fillColor=#000000;fontColor=#000000;strokeColor=#000000;fontSize=11;verticalLabelPosition=bottom;verticalAlign=top;spacingBottom=-6;" value="Compliance Officer" vertex="1">
+          <mxGeometry height="70" width="36" x="78" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="boundary" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8f9fa;dashed=1;dashPattern=8 8;strokeColor=#6c757d;fontStyle=1;fontSize=12;spacingTop=38;spacingLeft=24;spacingRight=24;spacingBottom=16;verticalAlign=top;align=left;" value="Money Exchange System — Customer View" vertex="1">
+          <mxGeometry height="540" width="820" x="230" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_register" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#1565c0;fontSize=11;" value="Register &amp; maintain profile" vertex="1">
+          <mxGeometry height="54" width="180" x="320" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_kyc" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#ef6c00;fontSize=11;" value="Complete KYC / verify identity&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;(kyc_status)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="62" width="200" x="310" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_openacct" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#1565c0;fontSize=11;" value="Open currency wallet / account" vertex="1">
+          <mxGeometry height="52" width="190" x="530" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_balance" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#1565c0;fontSize=11;" value="View balances &amp; wallet status&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;(balance, status)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="54" width="210" x="520" y="248" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_quote" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#2e7d32;fontSize=11;" value="Quote FX rate&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;(EXCHANGE_RATE)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="54" width="170" x="330" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_convert" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fce4ec;strokeColor=#ad1457;fontSize=11;" value="Execute currency conversion&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;(FX_TRANSACTION)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="62" width="220" x="530" y="368" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_history" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ede7f6;strokeColor=#5e35b1;fontSize=11;" value="View transaction history" vertex="1">
+          <mxGeometry height="52" width="176" x="420" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="e_cust_reg" edge="1" parent="1" source="actor_customer" style="html=1;strokeColor=#333333;dashed=0;endArrow=none;rounded=1" target="uc_register">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_cust_kyc" edge="1" parent="1" source="actor_customer" style="html=1;strokeColor=#333333;endArrow=none;rounded=1" target="uc_kyc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_cust_open" edge="1" parent="1" source="actor_customer" style="html=1;strokeColor=#333333;endArrow=none;rounded=1" target="uc_openacct">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_cust_bal" edge="1" parent="1" source="actor_customer" style="html=1;strokeColor=#333333;endArrow=none;rounded=1" target="uc_balance">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_cust_quote" edge="1" parent="1" source="actor_customer" style="html=1;strokeColor=#333333;endArrow=none;rounded=1" target="uc_quote">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_cust_conv" edge="1" parent="1" source="actor_customer" style="html=1;strokeColor=#333333;endArrow=none;rounded=1" target="uc_convert">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_cust_hist" edge="1" parent="1" source="actor_customer" style="html=1;strokeColor=#333333;endArrow=none;rounded=1" target="uc_history">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_comp_kyc" edge="1" parent="1" source="actor_compliance" style="html=1;strokeColor=#555555;dashed=1;dashPattern=4 4;endArrow=block;rounded=1" target="uc_kyc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="footer_panel_uc1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#90a4ae;align=left;verticalAlign=top;spacingLeft=16;spacingRight=16;spacingTop=12;spacingBottom=12;fontSize=11;fontColor=#263238;" value="&lt;b style=&quot;font-size:12px&quot;&gt;Description of this diagram&lt;/b&gt;&lt;br&gt;&lt;div style=&quot;margin-top:6px;line-height:1.45&quot;&gt;This use case view shows how end users interact with the money exchange for onboarding, multi-currency wallets, rate quotes, executing conversions, and reviewing past trades. It corresponds to the customer-facing slice of the data model (Customer profiles and KYC, Accounts per currency, Exchange rates used for pricing, and FX transactions recorded when money moves between wallets).&lt;/div&gt;&lt;br&gt;&lt;b style=&quot;font-size:12px&quot;&gt;Key actors and their purpose&lt;/b&gt;&lt;div style=&quot;margin-top:6px;line-height:1.5&quot;&gt;&lt;b&gt;• Customer&lt;/b&gt; — Primary actor: registers and updates contact details, completes identity steps, opens wallets, checks balances and live quotes, submits conversion requests, and views transaction history.&lt;br&gt;&lt;b&gt;• Compliance Officer&lt;/b&gt; — Supporting actor: reviews submissions and confirms or rejects KYC so only verified customers can use regulated exchange features (ties to &lt;i&gt;kyc_status&lt;/i&gt; in the Customer entity).&lt;/div&gt;" vertex="1">
+          <mxGeometry height="220" width="1180" x="60" y="720" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="UC_Operations" name="UC2 - Admin Operations">
+    <mxGraphModel dx="1768" dy="981" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="980" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=15;fontStyle=1;whiteSpace=wrap;" value="Use Case Diagram 2 — Operations, Rates &amp; Oversight&amp;nbsp;(aligned with CURRENCY, EXCHANGE_RATE, ACCOUNT&amp;nbsp;lifecycle)" vertex="1">
+          <mxGeometry height="36" width="820" x="240" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="admin" parent="1" style="shape=umlActor;html=1;outlineConnect=0;fillColor=#000000;fontColor=#000000;strokeColor=#000000;fontSize=11;verticalLabelPosition=bottom;verticalAlign=top;" value="Exchange Admin" vertex="1">
+          <mxGeometry height="70" width="36" x="92" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="auditor" parent="1" style="shape=umlActor;html=1;outlineConnect=0;fillColor=#000000;fontColor=#000000;strokeColor=#000000;fontSize=12;verticalLabelPosition=bottom;verticalAlign=top;" value="Auditor" vertex="1">
+          <mxGeometry height="70" width="36" x="94" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="boundary2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;dashed=1;dashPattern=8 8;strokeColor=#666666;fontStyle=1;fontSize=12;spacingTop=38;spacingLeft=24;spacingRight=24;spacingBottom=16;verticalAlign=top;align=left;fontColor=#333333;" value="Money Exchange System — Back Office" vertex="1">
+          <mxGeometry height="520" width="880" x="210" y="89" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_curr" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#e65100;fontSize=11;" value="Maintain currency catalogue&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;(CURRENCY, pegs)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="54" width="200" x="320" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_rates" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff9c4;strokeColor=#f9a825;fontSize=11;" value="Publish &amp; update exchange rates&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;(mid_rate, spread_bps,&amp;nbsp;valid_from)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="58" width="240" x="620" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_acctlife" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fce4ec;strokeColor=#c2185b;fontSize=11;" value="Manage account lifecycle&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;(suspend, reopen, opened_at)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="54" width="220" x="330" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_txnops" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ede7f6;strokeColor=#4527a0;fontSize=11;" value="Monitor &amp; resolve FX transactions&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;(status, exceptions)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="54" width="250" x="590" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_report" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e0f7fa;strokeColor=#00838f;fontSize=11;" value="Produce audit &amp; AML reports&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;(read-only aggregates)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="54" width="230" x="430" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ad_curr" edge="1" parent="1" source="admin" style="html=1;strokeColor=#333333;endArrow=none;rounded=1" target="uc_curr">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ad_rate" edge="1" parent="1" source="admin" style="html=1;strokeColor=#333333;endArrow=none;rounded=1" target="uc_rates">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ad_acc" edge="1" parent="1" source="admin" style="html=1;strokeColor=#333333;endArrow=none;rounded=1" target="uc_acctlife">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ad_txn" edge="1" parent="1" source="admin" style="html=1;strokeColor=#333333;endArrow=none;rounded=1" target="uc_txnops">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_aud_rep" edge="1" parent="1" source="auditor" style="html=1;strokeColor=#444444;dashed=1;dashPattern=4 4;endArrow=block;rounded=1" target="uc_report">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Inc_dep" edge="1" parent="1" source="uc_curr" style="html=1;strokeColor=#999999;dashed=1;endArrow=open;rounded=1;strokeWidth=2;orthogonalLoop=1;jettySize=auto;html=1;dashPattern=1 6;spacingTop=-4;spacingBottom=-4;exitX=1;exitY=0.5;entryX=0;entryY=0.5" target="uc_rates">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dep_lbl2" parent="1" style="text;html=1;strokeColor=none;fillColor=#ffffff;fontSize=9;fontStyle=2;fontColor=#666666" value="«depends»" vertex="1">
+          <mxGeometry height="14" width="46" x="488" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="footer_panel_uc2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#90a4ae;align=left;verticalAlign=top;spacingLeft=16;spacingRight=16;spacingTop=12;spacingBottom=12;fontSize=11;fontColor=#263238;" value="&lt;b style=&quot;font-size:12px&quot;&gt;Description of this diagram&lt;/b&gt;&lt;br&gt;&lt;div style=&quot;margin-top:6px;line-height:1.45&quot;&gt;This use case view covers back-office and governance: staff maintain the list of tradable currencies and their relationships, publish and version exchange rates (including spread and validity windows), control account lifecycle for risk or policy reasons, intervene on stalled or exceptional FX trades, and produce evidence for auditors. It aligns with Currency, Exchange rate, Account, and FX transaction maintenance in ERD.&lt;/div&gt;&lt;br&gt;&lt;b style=&quot;font-size:12px&quot;&gt;Key actors and their purpose&lt;/b&gt;&lt;div style=&quot;margin-top:6px;line-height:1.5&quot;&gt;&lt;b&gt;• Exchange Admin&lt;/b&gt; — Primary operational actor: defines which currencies are offered, creates and updates rate rows (mid, spread, effective dates), suspends or reopens customer accounts, and monitors or corrects transaction outcomes.&lt;br&gt;&lt;b&gt;• Auditor&lt;/b&gt; — External oversight: runs read-oriented reporting to verify controls, trace activity, and support AML or regulatory examinations without changing live configuration.&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="268" width="1180" x="60" y="682" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
