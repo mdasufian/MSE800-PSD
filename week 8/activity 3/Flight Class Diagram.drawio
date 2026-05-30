@@ -1,0 +1,58 @@
+<mxfile host="drawio-plugin" modified="2026-05-30T20:48:29.543Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="22.1.22" etag="OtshaYk-fZQwc_duEkMr" type="embed">
+  <diagram name="Flight Inheritance" id="flight-inheritance">
+    <mxGraphModel dx="971" dy="546" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Air New Zealand Domestic Flight System - Single Inheritance" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="20" width="600" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="flight-class" value="Flight" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;horizontalStack=0;collapsible=0;swimlaneFillColor=#ffffff;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="280" y="80" width="290" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="flight-attr-header" value="Attributes" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;fontStyle=4;fontSize=11;rounded=0;" parent="flight-class" vertex="1">
+          <mxGeometry y="28" width="290" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="flight-attr" value="- flight_number : str&#xa;- airline : str&#xa;- origin : str&#xa;- destination : str&#xa;- departure_time : str&#xa;- duration_hours : float" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;rounded=0;" parent="flight-class" vertex="1">
+          <mxGeometry y="46" width="290" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="flight-sep" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#6c8ebf;rounded=0;" parent="flight-class" vertex="1">
+          <mxGeometry y="146" width="290" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="flight-meth-header" value="Methods" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;fontStyle=4;fontSize=11;rounded=0;" parent="flight-class" vertex="1">
+          <mxGeometry y="154" width="290" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="flight-meth" value="+ __init__(...)&#xa;+ display_info() : void&#xa;+ board_passengers() : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;rounded=0;" parent="flight-class" vertex="1">
+          <mxGeometry y="172" width="290" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="domestic-class" value="DomesticFlight" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;horizontalStack=0;collapsible=0;swimlaneFillColor=#ffffff;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="280" y="440" width="290" height="172" as="geometry" />
+        </mxCell>
+        <mxCell id="dom-attr-header" value="Additional Attributes" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;fontStyle=4;fontSize=11;rounded=0;" parent="domestic-class" vertex="1">
+          <mxGeometry y="28" width="290" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="dom-attr" value="- region : str&#xa;- baggage_allowance_kg : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;rounded=0;" parent="domestic-class" vertex="1">
+          <mxGeometry y="46" width="290" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dom-sep" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#82b366;rounded=0;" parent="domestic-class" vertex="1">
+          <mxGeometry y="86" width="290" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="dom-meth-header" value="Additional Methods" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;fontStyle=4;fontSize=11;rounded=0;" parent="domestic-class" vertex="1">
+          <mxGeometry y="94" width="290" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="dom-meth" value="+ __init__(...)&#xa;+ display_domestic_info() : void&#xa;+ check_baggage(bag_weight_kg) : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;rounded=0;" parent="domestic-class" vertex="1">
+          <mxGeometry y="112" width="290" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="inherit-arrow" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;" parent="1" source="domestic-class" target="flight-class" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inherit-label" value="inherits (single inheritance)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=2;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="575" y="355" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="note" value="Inherited (shared) members:&#xa;- flight_number, airline, origin,&#xa;  destination, departure_time,&#xa;  duration_hours&#xa;- display_info()&#xa;- board_passengers()" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacingLeft=8;fontSize=11;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="610" y="440" width="220" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
