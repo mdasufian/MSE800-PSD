@@ -1,0 +1,9 @@
+{
+  "alice01": {
+    "username": "alice01",
+    "full_name": "Alice Smith",
+    "dob": "1995-04-12",
+    "password_hash": "c355fe2966ba0148ea4a49825cbc5553dc18aabf0f7645694302cc9aa024b39e",
+    "salt": "a02aa7ebcb85e61a7784ad5677e93266"
+  }
+}
