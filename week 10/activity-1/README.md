@@ -1,8 +1,7 @@
 # Activity 1 — User Account Management (Console)
 
 A small Python console application demonstrating maintainable design for a
-user-account system. Built for the MSE800 / PSD master's software engineering
-class.
+user-account system. 
 
 ## Features
 
