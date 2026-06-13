@@ -14,14 +14,17 @@ three in a row (horizontally, vertically, or diagonally) wins.
 
 ## Project layout
 
-| File             | Responsibility                                  |
-| ---------------- | ----------------------------------------------- |
-| `tic_tac_toe.py` | Game logic, board rendering, and console loop   |
+| File             | Responsibility                                          |
+| ---------------- | ------------------------------------------------------- |
+| `board.py`       | `Board` class — cells, placement, win/draw checks, view |
+| `player.py`      | `Player` class — marker and console move input          |
+| `game.py`        | `Game` class — turn loop wiring board and players       |
+| `main.py`        | Entry point — play-again loop and `main()`              |
 
 ## Run
 
 ```bash
-python3 tic_tac_toe.py
+python3 main.py
 ```
 
 ## How to play
