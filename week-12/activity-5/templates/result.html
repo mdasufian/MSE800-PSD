@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="card">
+        <h2>Your Result</h2>
+        <p class="subtitle">Body Mass Index</p>
+
+        <!-- Big BMI number -->
+        <div class="bmi-value">{{ bmi }}</div>
+        <p class="bmi-label">kg/m²</p>
+
+        <!-- Category pill — class is set dynamically so colors match the category -->
+        <div class="category category-{{ category.split()[0]|lower }}">
+            {{ category }}
+        </div>
+
+        <a href="/" class="btn">Calculate Again</a>
+    </div>
+</body>
+</html>
